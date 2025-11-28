@@ -1,4 +1,4 @@
-<h1 align="center">🚒 Xe Robot Cứu Hỏa IoT: Tự động Dò lửa & Điều khiển Web</h1>
+<h1 align="center">🚒 IMFS: An Intelligent Mini Firefighting System(Arduino) </h1>
 
 <div align="center">
 
@@ -11,6 +11,7 @@
 [![Fit DNU](https://img.shields.io/badge/Fit%20DNU-green?style=for-the-badge)](https://fitdnu.net/)
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-red?style=for-the-badge)](https://dainam.edu.vn)
 </div> 
+
 
 Một mô hình **xe chữa cháy mini** có khả năng:
 
