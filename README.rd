@@ -12,14 +12,13 @@
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-red?style=for-the-badge)](https://dainam.edu.vn)
 </div> 
 
-
 Một mô hình **xe chữa cháy mini** có khả năng:
 
 - Tự di chuyển, tránh vật cản  
 - Phát hiện lửa bằng **cảm biến flame 3 hướng**  
 - Tiến lại gần đám cháy và **tự xoay vòi phun** về phía ngọn lửa  
 - **Phun nước** dập lửa khi đủ gần, kèm còi & đèn cảnh báo  
-- Điều khiển thủ công bằng Web
+
 ---
 ## 🔥 Giới thiệu
 
@@ -36,9 +35,15 @@ Dự án mô phỏng một **xe chữa cháy mini thông minh** dùng Arduino, k
 
 
 <p align="center">
-  <img src="Poster_IoT2025.png" alt="Poster IMFS: Một hệ thống chữa cháy mini thông minh" width="800">
+  <img src="Poster.png" alt="Poster IMFS: Một hệ thống chữa cháy mini thông minh" width="800">
 </p>
 
+---
+
+## 🧾 Sơ đồ hoạt động
+<p align="center">
+  <img src="sodo.png" alt="Sơ đồ hoạt động hệ thống chữa cháy mini thông minh" width="400">
+</p>
 
 ---
 
@@ -87,6 +92,47 @@ Gợi ý phần cứng (có thể thay đổi theo module thực tế):
 - 2× LED (báo lửa, báo hết nước)  
 - 1× **Buzzer**  
 - Dây nối, nguồn 5V/12V, khung xe, ống dẫn nước,...
+
+---
+
+## 🧷 Sơ đồ chân (Pin map)
+
+### Động cơ & driver
+
+| Chức năng             | Chân Arduino |
+|-----------------------|-------------:|
+| ENA (PWM motor A)     | 5            |
+| ENB (PWM motor B)     | 6            |
+| IN1                   | 7            |
+| IN2                   | 8            |
+| IN3                   | 9            |
+| IN4                   | 10           |
+
+### Servo & cảm biến siêu âm
+
+| Chức năng             | Chân Arduino |
+|-----------------------|-------------:|
+| Servo nozzle          | 11           |
+| HC-SR04 TRIG          | 2            |
+| HC-SR04 ECHO          | 3            |
+
+### Máy bơm & cảm biến
+
+| Chức năng             | Chân Arduino |
+|-----------------------|-------------:|
+| Máy bơm (PUMP_PIN)    | A1           |
+| Cảm biến mực nước     | A4           |
+
+### Cảm biến lửa & hiển thị
+
+| Chức năng             | Chân Arduino |
+|-----------------------|-------------:|
+| Flame trái (FLAME_L)  | 12           |
+| Flame giữa (FLAME_C)  | 4            |
+| Flame phải (FLAME_R)  | 13           |
+| LED báo lửa           | A2           |
+| LED báo nước          | A3           |
+| Buzzer                | A0           |
 
 ---
 
